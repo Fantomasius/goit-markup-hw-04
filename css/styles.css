@@ -186,6 +186,22 @@ body {
 /*Герой*/
 
 .hero {
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	/*outline: 1px solid black;*/
+	background: rgba(47, 48, 58, 0.8);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	padding-top: 200px;
+	padding-right: auto;
+	padding-bottom: 200px;
+	padding-left: auto;
 	text-align: center;
 }
 
@@ -194,8 +210,8 @@ body {
 	margin-bottom: 30px;
 
 	color: var(--primary-white-color);
-	/*временный цвет фона для видимости заголовка*/
-	background-color: rgba(47, 48, 58, 0.8);
+	/*временный цвет фона для видимости заголовка
+	background-color: rgba(47, 48, 58, 0.8);*/
 	font-style: normal;
 	font-weight: 900;
 	font-size: 44px;
@@ -522,6 +538,38 @@ body {
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-decoration: none;
+}
+
+.footer-button {
+	display: inline-block;
+	padding-top: 8px;
+	padding-right: 60px;
+	padding-bottom: 8px;
+	padding-left: 27px;
+	border-radius: 4px;
+	border-color: transparent;
+	min-width: 200px;
+
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+}
+
+.footer-button::after {
+	content: "";
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+	background-image: url(../images/telegram.svg);
+	background-size: contain;
 }
 
 /*ПОРТФОЛИО*/
