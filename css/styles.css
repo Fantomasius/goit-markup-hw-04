@@ -40,6 +40,12 @@ html {
 	box-sizing: border-box;
 }
 
+/*img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}*/
+
 body {
 	background-color: var(--primary-white-color);
 	color: var(--primary-text-color);
@@ -162,6 +168,18 @@ body {
 	margin-right: 0;
 }
 
+.mail:hover {
+	color: var(--accent-color);
+}
+
+.item:hover {
+	--color2: var(--accent-color);
+}
+
+.link-icon:hover {
+	--color2: var(--accent-color);
+}
+
 .contact .link {
 	display: block;
 	padding-top: 32px;
@@ -199,9 +217,9 @@ body {
 	background-size: cover;
 
 	padding-top: 200px;
-	padding-right: auto;
+	/*padding-right: auto;*/
 	padding-bottom: 200px;
-	padding-left: auto;
+	/*padding-left: auto;*/
 	text-align: center;
 }
 
@@ -410,6 +428,23 @@ body {
 
 .social-link {
 	text-decoration: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	background-color: var(--primary-white-color);
+	border-radius: 50%;
+}
+
+.social-link:hover {
+	background-color: var(--accent-color);
+	--color1: var(--primary-white-color);
+}
+
+.social-link-icon:hover {
+	--color1: var(--primary-white-color);
+	background-color: var(--accent-color);
 }
 
 .social-item {
@@ -428,10 +463,28 @@ body {
 	justify-content: space-between;
 }
 
-/*.clients-item {
+.clients-link {
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	width: 170px;
 	height: 90px;
-}*/
+	background-color: var(--primary-white-color);
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+}
+
+.clients-link:hover {
+	--color1: var(--accent-color);
+	background-color: var(--primary-white-color);
+	border: 1px solid var(--accent-color);
+}
+
+.clients-icon:hover {
+	--color1: var(--accent-color);
+	background-color: var(--primary-white-color);
+}
 
 /*Футер*/
 
@@ -529,6 +582,23 @@ body {
 	/*width: 44px;
 	height: 44px;*/
 	text-decoration: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+
+.footer-social:hover {
+	background-color: var(--accent-color);
+	--color1: var(--primary-white-color);
+}
+
+.footer-link-icon:hover {
+	--color1: var(--primary-white-color);
+	background-color: var(--accent-color);
 }
 
 .act-container {
@@ -634,6 +704,7 @@ body {
 	text-align: center;
 	letter-spacing: 0.03em;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .portfolio-button:hover {
