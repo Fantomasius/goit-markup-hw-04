@@ -168,20 +168,33 @@ body {
 	margin-right: 0;
 }
 
-.mail:hover {
-	color: var(--accent-color);
+.item {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.item:hover {
+.item:hover,
+.item:focus {
 	--color2: var(--accent-color);
 }
 
-.link-icon:hover {
+.link-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.link-icon:hover,
+.link-icon:focus {
 	--color2: var(--accent-color);
 }
 
 .contact .link {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
@@ -197,6 +210,7 @@ body {
 .contact .link:hover,
 .contact .link:focus {
 	color: var(--accent-color);
+	--color2: var(--accent-color);
 }
 
 /*СТУДИЯ*/
@@ -437,12 +451,14 @@ body {
 	border-radius: 50%;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
 	background-color: var(--accent-color);
 	--color1: var(--primary-white-color);
 }
 
-.social-link-icon:hover {
+.social-link-icon:hover,
+.social-link-icon:focus {
 	--color1: var(--primary-white-color);
 	background-color: var(--accent-color);
 }
@@ -475,13 +491,15 @@ body {
 	border-radius: 4px;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
 	--color1: var(--accent-color);
 	background-color: var(--primary-white-color);
 	border: 1px solid var(--accent-color);
 }
 
-.clients-icon:hover {
+.clients-icon:hover,
+.clients-icon:focus {
 	--color1: var(--accent-color);
 	background-color: var(--primary-white-color);
 }
@@ -591,12 +609,14 @@ body {
 	border-radius: 50%;
 }
 
-.footer-social:hover {
+.footer-social:hover,
+.footer-social:focus {
 	background-color: var(--accent-color);
 	--color1: var(--primary-white-color);
 }
 
-.footer-link-icon:hover {
+.footer-link-icon:hover,
+.footer-link-icon:focus {
 	--color1: var(--primary-white-color);
 	background-color: var(--accent-color);
 }
@@ -707,9 +727,11 @@ body {
 	cursor: pointer;
 }
 
-.portfolio-button:hover {
+.portfolio-button:hover,
+.portfolio-button:focus {
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .flex-container {
